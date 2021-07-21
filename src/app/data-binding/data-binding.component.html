@@ -1,0 +1,134 @@
+<section class="property-binding">
+
+    <!-- AULA 09 -->
+    <!-- <article>
+        <h3>Interpolation</h3>
+        <p> Site: {{  url  }} </p>
+
+        <p><b>urlString</b>   </p>
+        <p> {{ urlImagem }} </p>
+
+        
+        <p> <b>Interpolação</b> </p>
+        <img src="{{ urlImagem }}" alt="">
+
+        <p> <b>Property Binding</b> </p>
+        <img [src]="urlImagem" alt="">
+    </article> -->
+
+
+    <!-- AULA 10 -->
+    <!-- <article>
+        <h3> Class e Style Binding</h3>
+        <div>
+
+            Selecione uma Classe
+            <select #classe (change)="0">
+                <option value="alert alert-primary">alert alert-primary</option>
+                <option value="alert alert-secondary">alert alert-secondary</option>
+                <option value="alert alert-success">alert alert-success</option>
+            </select>
+            <br><br>
+
+            <div class="alert {{ classe.value }} " role="alert">
+                texto
+            </div>  
+
+            <div class="alert" role="alert" 
+            [class.alert-primary]="classe.value == 'alert alert-primary' ">
+                This is a primary alert—check it out!
+            </div>
+            <div class="alert" role="alert" 
+            [class.alert-secondary]="classe.value == 'alert alert-secondary' ">
+                This is a secondary alert—check it out!
+            </div>
+            <div class="alert" role="alert" 
+            [class.alert-success]="classe.value == 'alert alert-success' ">
+                This is a success alert—check it out!
+            </div>
+
+            <div class="alert alert-success" role="alert"
+             [style.display] =" classe.value == 'alert alert-success' ? 'block' : 'none'">
+                Só aparece em caso de SUCCESSO!
+            </div>
+
+        </div>
+    </article> -->
+
+
+    <!-- AULA 11 -->
+    <!-- <article>
+        <h3>Event binding</h3>
+        <div>
+            <button (click)="botaoClicado()"
+            class="btn btn-primary">
+                Me Clique!
+            </button>
+            <br><br>
+
+            <input type="text"
+            (keyup)="onKeyUp($event)"
+            (keyup.enter)="salvarValor($any($event.target).value)"
+            (blur)="salvarValor(campoInput.value)"
+            #campoInput />
+                <!-- (keyup.enter)="salvarValor($any($event.target).value)"/> DEPRECIADO -->
+
+    <!-- </div> 
+            <br><br>
+            <p> Valor Atual: {{ valorAtual }} </p>
+            <p> Salvar Valor: {{ valorSalvo }} </p>
+
+            <br><br>
+
+            <span 
+            (mouseover)="onMouseOverOut()"
+            (mouseout)="onMouseOverOut()"
+            [class.highlight]="isMouseOver"
+            >
+                Passe o mouse sobre mim!
+            </span>
+    </article> -->
+
+
+    <!-- AULA 12 -->
+    <!-- <article>
+        <h3> Two-Way Data Binding
+
+            <div>
+                <input type="text" [value]="nome" (input)="nome = $any($event.target).value" />
+                <br>
+                <input type="text" [ngModel]="nome" (ngModelChange)="nome = $event" />
+                <br>
+
+                <input type="text" [(ngModel)]="nome" />
+                <br>
+                <input type="text" bindon-ngModel="nome" />
+                <p>Você digitou: {{ nome }} </p>
+
+            </div>
+
+
+            <div>
+                
+            <input type="text" bindon-ngModel="pessoa.nome" />
+            <input type="text" [(ngModel)]="pessoa.idade" />
+
+            </div>
+
+            
+            <p>Seu nome é: {{ pessoa.nome }} </p>
+            
+            <p>Sua idade é: {{ pessoa.idade }} </p>
+        </h3>
+    </article> -->
+
+    
+    <!-- AULA 12 TAMBÉM -->
+    <!-- <h3>Formulário</h3>
+    <app-meu-form></app-meu-form> -->
+
+    
+    <!-- AULA 13 -->
+    <h3>INPUT/OUTPUT Properties</h3>
+    <app-curso [nome]="nomeDoCurso"></app-curso>
+</section>
