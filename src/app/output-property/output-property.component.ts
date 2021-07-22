@@ -16,6 +16,7 @@ export class OutputPropertyComponent implements OnInit {
   //PEGAR O VALOR DIRETO DO CAMPO PELO ViewChild
   @ViewChild('campoInput',{static:true}) campoValorInput! : Input ;
 
+  
   incrementa() {
     this.campoValorInput 
     this.valor++;
