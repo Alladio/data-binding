@@ -1,4 +1,4 @@
-<section class="property-binding">
+<section class="input-output-properties">
 
     <!-- AULA 09 -->
     <!-- <article>
@@ -129,6 +129,18 @@
 
     
     <!-- AULA 13 -->
-    <h3>INPUT/OUTPUT Properties</h3>
-    <app-curso [nome]="nomeDoCurso"></app-curso>
+    <!-- <h3>INPUT/OUTPUT Properties</h3>
+    <app-curso [nome]="nomeDoCurso"></app-curso> -->
+
+    <!-- AULA 14 -->
+    <article>
+        <app-curso [nome]="nomeDoCurso"></app-curso> 
+
+        <h3>Input/Output Properties</h3>
+        <contador [valor]="valorInicial"
+        (mudouValor)="onMudouValor($event)"
+        ></contador>
+    </article>
+        
+    
 </section>
