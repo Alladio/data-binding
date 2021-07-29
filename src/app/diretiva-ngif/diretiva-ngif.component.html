@@ -1,0 +1,29 @@
+<h3>*ngif</h3>
+
+
+<div *ngIf="cursos.length >0"> Lista de Cursos aqui
+
+    <div *ngIf="cursos.length >0"> Lista</div>
+</div>
+
+<div [hidden]="mostrarCursos"> Lista de Cursos aqui
+
+    <div [hidden]="mostrarCursos"> Lista</div>
+</div>
+<br>
+
+<button (click)="mostrarCursosChange()">Mostrar/Esconder Curso</button>
+
+
+<div *ngIf="cursos.length >0"> Lista de Cursos aqui
+
+    <div *ngIf="cursos.length >0"> Lista</div>
+</div>
+
+<br>
+<h4>UsandoTemplates</h4>
+<br>
+
+<ng-template [ngIf]="cursos.length >0">
+    <div> Lista de Cursos aqui</div>
+</ng-template>

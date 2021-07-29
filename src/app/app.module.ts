@@ -9,6 +9,9 @@ import { MeuFormModule } from './meu-form/meu-form.module';
 import { InputPropertyComponent } from './input-property/input-property.component';
 import { OutputPropertyComponent } from './output-property/output-property.component';
 import { CicloComponent } from './ciclo/ciclo.component';
+import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
+import { DiretivaNgswitchComponent } from './diretiva-ngswitch/diretiva-ngswitch.component';
+import { DiretivaNgForComponent } from './diretiva-ng-for/diretiva-ng-for.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { CicloComponent } from './ciclo/ciclo.component';
     DataBindingComponent,
     InputPropertyComponent,
     OutputPropertyComponent,
-    CicloComponent
+    CicloComponent,
+    DiretivaNgifComponent,
+    DiretivaNgswitchComponent,
+    DiretivaNgForComponent
   ],
   imports: [
     BrowserModule,

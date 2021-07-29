@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class MeuFormComponent implements OnInit {
   
 
-  nome:string="abcd";
+  nome:string="Digite Seu Nome";
 
   pessoa: any = {
     nome: 'Alladio',
