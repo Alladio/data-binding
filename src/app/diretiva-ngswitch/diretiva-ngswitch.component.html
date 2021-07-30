@@ -18,23 +18,25 @@
   </div>
 </nav>
 
-<div class="container" [ngSwitch]='abaSelecionada'>
+<!-- <div class="container" [ngSwitch]='abaSelecionada'>
+  <h3> NAV BAR Utilizando nfSwitchCase  </h3>
   <p *ngSwitchCase="'home'"> Home  </p>
   <p *ngSwitchCase="'link'"> Modo Link Ativado  </p>
   <p *ngSwitchCase="'map'"> Modo Mapa Ativado  </p>
 
-</div>
+</div> -->
 
-<h3> Utilizando Template nfSwitchCase </h3>
 
-<div>
-  <template [ngSwitchCase]="'lista'">
+
+<div class="container" [ngSwitch]>
+  <h3> NAV BAR Utilizando TEMPLATE nfSwitchCase  </h3>
+  <ng-template [ngSwitchCase]="'home'" ngSwitchDefault>
     <p> Modo Home Ativado </p>
-  </template>
-  <template [ngSwitchCase]="'link'">
+  </ng-template>
+  <ng-template [ngSwitchCase]="'link'" >
     <p> Modo link Ativado </p>
-  </template>
-  <template [ngSwitchCase]="'map'">
+  </ng-template>
+  <ng-template [ngSwitchCase]="'map'">
     <p> Modo map Ativado </p>
-  </template>
+  </ng-template>
 </div>

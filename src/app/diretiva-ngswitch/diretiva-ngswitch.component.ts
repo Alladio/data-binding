@@ -14,5 +14,4 @@ export class DiretivaNgswitchComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
